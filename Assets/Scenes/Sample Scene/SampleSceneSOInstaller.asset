@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: SampleSceneSOInstaller
   m_EditorClassIdentifier: 
   _playerData: {fileID: 11400000, guid: c927585ddb13293468e5e3c0c56c0caa, type: 2}
+  _wheatData: {fileID: 11400000, guid: 37c7f5b95d625024bb99128a31fe4393, type: 2}
+  _fieldSettings: {fileID: 11400000, guid: 93d92d45b37df8b449364052d30af814, type: 2}
