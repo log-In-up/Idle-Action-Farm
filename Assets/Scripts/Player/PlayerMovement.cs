@@ -19,6 +19,15 @@ namespace Player
         private Vector3 _currentVelocity, _moveAmount;
         #endregion
 
+        #region Zenject
+        [Inject]
+        private void Constructor(DynamicJoystick dynamicJoystick, PlayerData playerData)
+        {
+            _dynamicJoystick = dynamicJoystick;
+            _playerData = playerData;
+        }
+        #endregion
+
         #region MonoBehaviour API
         private void Awake()
         {
@@ -61,15 +70,6 @@ namespace Player
             float movementValue = Mathf.Clamp(_moveAmount.magnitude / _playerData.MovementSpeed, 0.0f, _playerData.MovementSpeed);
 
             _animator.SetMovement(movementValue);
-        }
-        #endregion
-
-        #region Zenject
-        [Inject]
-        private void Constructor(DynamicJoystick dynamicJoystick, PlayerData playerData)
-        {
-            _dynamicJoystick = dynamicJoystick;
-            _playerData = playerData;
         }
         #endregion
     }

@@ -8,7 +8,7 @@ namespace Field
     public sealed class Wheat : MonoBehaviour
     {
         #region Editor field
-        [SerializeField] private Transform _model;
+        [SerializeField] private Transform _model = null;
         #endregion
 
         #region Fields
@@ -54,7 +54,7 @@ namespace Field
                 _model.gameObject.SetActive(_hasGrown);
                 _boxCollider.enabled = _hasGrown;
 
-                Instantiate(_wheatData.DropOnMowing, transform.position, Quaternion.identity);
+                Instantiate(_wheatData.DropOnMowing, transform.position + _wheatData.DropSpawnOffset, Quaternion.identity);
 
                 _timeToGrow = _wheatData.GrowTime;
             }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Player
@@ -23,7 +21,6 @@ namespace Player
         {
             _sphereCollider = GetComponent<SphereCollider>();
         }
-        #endregion
 
         private void Update()
         {
@@ -31,5 +28,6 @@ namespace Player
             _playerAnimator.SetHarvesting(isHarvesting);
             _harvestTool.gameObject.SetActive(isHarvesting);
         }
+        #endregion
     }
 }

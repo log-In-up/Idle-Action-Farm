@@ -6,7 +6,6 @@ namespace Field
     public sealed class FieldSettings : ScriptableObject
     {
         #region Parameters
-        [field: Header("Rally point settings")]
         [field: SerializeField, Min(1)] public int Width { get; private set; }
         [field: SerializeField, Min(1)] public int Height { get; private set; }
         [field: SerializeField, Min(0.0f)] public float HorizontalInterval { get; private set; }

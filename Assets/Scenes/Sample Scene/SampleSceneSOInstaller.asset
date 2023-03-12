@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6f2a9b530f1924d8128ed9031df5b7, type: 3}
   m_Name: SampleSceneSOInstaller
   m_EditorClassIdentifier: 
+  _barnData: {fileID: 11400000, guid: e452d605578566743adcc408ab31d1c1, type: 2}
+  _coinData: {fileID: 11400000, guid: 1a03811477190d94387c9cfb65c41c34, type: 2}
+  _fieldSettings: {fileID: 11400000, guid: 93d92d45b37df8b449364052d30af814, type: 2}
   _playerData: {fileID: 11400000, guid: c927585ddb13293468e5e3c0c56c0caa, type: 2}
   _wheatData: {fileID: 11400000, guid: 37c7f5b95d625024bb99128a31fe4393, type: 2}
-  _fieldSettings: {fileID: 11400000, guid: 93d92d45b37df8b449364052d30af814, type: 2}
